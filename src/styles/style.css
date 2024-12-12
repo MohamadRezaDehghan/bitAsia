@@ -1,0 +1,286 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+*
+*	Name:			IRANYekanX Fonts
+*	Version:			2.4
+*	Author:			Moslem Ebrahimi (moslemebrahimi.com)
+*	Created on:		Aug 02, 2022
+*	Updated on:		Aug 02, 2022
+*	Website:			http://fontiran.com
+*	Copyright:		Commercial/Proprietary Software
+--------------------------------------------------------------------------------------
+فونت ایران یکان X  یک نرم افزار مالکیتی محسوب می شود. جهت آگاهی از قوانین استفاده از این فونت ها لطفا به وب سایت (فونت ایران دات کام) مراجعه نمایید
+--------------------------------------------------------------------------------------
+IRANYekanX fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com 
+--------------------------------------------------------------------------------------
+This set of fonts are used in this project under the license: (.....)
+------------------------------------------------------------------------------------- fonts/-
+*	
+**/
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../public/font/woff/IRANYekanX-Thin.woff"),
+    url("../../public/font/woff2/IRANYekanX-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../../public/font/woff/IRANYekanX-UltraLight.woff") format("woff"),
+    url("../../public/font/woff2/IRANYekanX-UltraLight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../public/font/woff/IRANYekanX-Light.woff") format("woff"),
+    url("../../public/font/woff2/IRANYekanX-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../public/font/woff/IRANYekanX-Medium.woff") format("woff"),
+    url("../../public/font/woff2/IRANYekanX-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../public/font/woff/IRANYekanX-DemiBold.woff") format("woff"),
+    url("../../public/font/woff2/IRANYekanX-DemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../public/font/woff/IRANYekanX-ExtraBold.woff") format("woff"),
+    url("../../public/font/woff2/IRANYekanX-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../public/font/woff/IRANYekanX-Black.woff") format("woff"),
+    url("../../public/font/woff2/IRANYekanX-Black.woff2") format("woff2");
+}
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 950;
+  src: url("../../public/font/woff/IRANYekanX-ExtraBlack.woff") format("woff"),
+    url("../../public/font/woff2/IRANYekanX-ExtraBlack.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 1000;
+  src: url("../../public/font/woff/IRANYekanX-Heavy.woff") format("woff"),
+    url("../../public/font/woff2/IRANYekanX-Heavy.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../../public/font/woff/IRANYekanX-Bold.woff") format("woff"),
+    url("../../public/font/woff2/IRANYekanX-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../public/font/woff/IRANYekanX-Regular.woff") format("woff"),
+    url("../../public/font/woff2/IRANYekanX-Regular.woff2") format("woff2");
+}
+
+:root {
+  --color-teal: #0ead98;
+  --bg-teal: #0ead9817;
+  --color-tealLight: #0ead9817;
+
+  /*dark*/
+  --bg-dark-body: #111;
+  --bg-dark-card: #344054;
+  --bg-dark-footer: #111;
+
+  --bg-neutralCustom: #222;
+  --bg-neutralCustom-700: #4b5563;
+  --white-color: #ffffff;
+  --text-zincCustom-800: #333;
+  --text-zincCustom-900: #475467;
+  --text-slate-50: #f7f8fa;
+
+  --text-grayCustom-100: #f3f4f6;
+  --text-grayCustom-200: #e5e7eb;
+  --text-grayCustom-300: #d1d5db;
+  --text-grayCustom-400: #9ca3af;
+  --text-grayCustom-500: #6b7280;
+  --text-grayCustom-600: #4b5563;
+  --text-grayCustom-700: #374151;
+  --text-grayCustom-800: #1f2937;
+  --text-grayCustom-900: #111827;
+  --text-green-500: #22c55e;
+  --text-yellow-500: #eab308;
+}
+
+body {
+  font-family: IRANYekanX;
+}
+
+.background {
+  background-image: url("../../public/images/Group1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  
+}
+
+.swiper {
+  width: 100%;
+  height: 150px;
+  margin: 20px auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 316px !important;
+
+}
+.container-for-swiper {
+  position: relative;
+  height: 100%;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutUsBg {
+  background-image: url('../../public/images/aboutUsBg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+
+  filter: blur(3px);
+  -webkit-filter: blur(3px); 
+  opacity: 0.3;
+}
+
+
+.container-triangle {
+  position: relative;
+  width: 100%;
+  height: 50%; /* ارتفاع کانتینر */
+  overflow: hidden; /* جلوگیری از خروج عناصر */
+}
+
+.triangle {
+  position: absolute;
+
+  animation: move-triangle linear infinite alternate;
+}
+
+/* انیمیشن کلی برای حرکت */
+@keyframes move-triangle {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(20px, 20px);
+  }
+}
+
+.show {display: block;}
+
+
+.custom-shadow {
+  box-shadow: rgba(191, 219, 254, 0.12) 0px 2px 4px 0px, rgba(191, 219, 254, 0.32) 0px 2px 16px 0px;
+}
+
+/* حذف border دور select2 */
+.select2-container .select2-selection {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* اگر border در حالت فوکوس هم وجود دارد، آن را حذف کنید */
+.select2-container .select2-selection:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+/* فقط برای select2 با کلاس custom-select */
+.custom-select + .select2-container .select2-selection {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* افزایش عرض منوی کشویی */
+.custom-select-dropdown {
+  min-width: 200px; /* تنظیم حداقل عرض */
+  width: auto; /* عرض متناسب با محتوای گزینه‌ها */
+}
+
+/* استایل گزینه‌ها (دلخواه) */
+.custom-select-dropdown .select2-results__option {
+  white-space: nowrap; /* جلوگیری از شکستن خطوط */
+}
+
+.accordion{
+transition: 0.4s;
+}
+
+.tabs-for-table {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-button-for-table {
+ 
+  outline: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  
+}
+
+.tab-button-for-table.active {
+  color: #2563eb;
+  color: white;
+  border: #000 1px !important;
+}
+.tab-button-for-table > .change > .active {
+  color: #2563eb !important;
+}
+
+.tab-content-for-table {
+  display: none;
+}
+
+.tab-content-for-table.active {
+  display: block;
+}
+
+.group:hover .group-hover\\:flex {
+  display: flex;
+}

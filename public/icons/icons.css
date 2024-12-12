@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "icons";
+    src: url("./icons.woff?518b427c8cbf69f973e37d32e416defd") format("woff"),
+url("./icons.woff2?518b427c8cbf69f973e37d32e416defd") format("woff2");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bold-additem:before {
+    content: "\f101";
+}
+.icon-bold-arrange-square:before {
+    content: "\f102";
+}
+.icon-bold-bag-2:before {
+    content: "\f103";
+}
+.icon-bold-edit-2:before {
+    content: "\f104";
+}
+.icon-bold-forward-item:before {
+    content: "\f105";
+}
+.icon-bold-global-search:before {
+    content: "\f106";
+}
+.icon-bold-home-2:before {
+    content: "\f107";
+}
+.icon-bold-search-status-1:before {
+    content: "\f108";
+}
+.icon-bold-wallet-2:before {
+    content: "\f109";
+}
+.icon-outline-add:before {
+    content: "\f10a";
+}
+.icon-outline-arrow-left-2:before {
+    content: "\f10b";
+}
+.icon-outline-arrow-right-1:before {
+    content: "\f10c";
+}
+.icon-outline-bag-2:before {
+    content: "\f10d";
+}
+.icon-outline-cloud-add:before {
+    content: "\f10e";
+}
+.icon-outline-document-text:before {
+    content: "\f10f";
+}
+.icon-outline-driver-2:before {
+    content: "\f110";
+}
+.icon-outline-gift:before {
+    content: "\f111";
+}
+.icon-outline-global-search:before {
+    content: "\f112";
+}
+.icon-outline-global:before {
+    content: "\f113";
+}
+.icon-outline-grid-2:before {
+    content: "\f114";
+}
+.icon-outline-home-2:before {
+    content: "\f115";
+}
+.icon-outline-info-circle:before {
+    content: "\f116";
+}
+.icon-outline-logout:before {
+    content: "\f117";
+}
+.icon-outline-message-add:before {
+    content: "\f118";
+}
+.icon-outline-message:before {
+    content: "\f119";
+}
+.icon-outline-moneys:before {
+    content: "\f11a";
+}
+.icon-outline-more-circle:before {
+    content: "\f11b";
+}
+.icon-outline-notification:before {
+    content: "\f11c";
+}
+.icon-outline-search-normal-1:before {
+    content: "\f11d";
+}
+.icon-outline-security-user:before {
+    content: "\f11e";
+}
+.icon-outline-setting-3:before {
+    content: "\f11f";
+}
+.icon-outline-teacher:before {
+    content: "\f120";
+}
+.icon-outline-user:before {
+    content: "\f121";
+}
+.icon-outline-wallet-2:before {
+    content: "\f122";
+}
