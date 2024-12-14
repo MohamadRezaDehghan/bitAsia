@@ -63,55 +63,7 @@ var swiper = new Swiper(".mySwiper", {
   });
   
 
- // این تابع برای تنظیم انیمیشن تصادفی است
-function animateTriangles(containerId, speed) {
-  const container = document.getElementById(containerId);
-  const triangles = container.querySelectorAll(".triangle");
 
-  triangles.forEach((triangle) => {
-    const containerWidth = container.offsetWidth;
-    const containerHeight = container.offsetHeight;
-
-    // مقدار تصادفی برای هر مثلث
-    const randomX = Math.random() * (containerWidth - 100); // موقعیت افقی تصادفی
-    const randomY = Math.random() * (containerHeight - 100); // موقعیت عمودی تصادفی
-    const randomDuration = speed || Math.random() * 5 + 5; // سرعت تصادفی
-
-    // تنظیم موقعیت اولیه
-    triangle.style.left = `${randomX}px`;
-    triangle.style.top = `${randomY}px`;
-    triangle.style.animationDuration = `${randomDuration}s`;
-
-    // تعریف انیمیشن با مقادیر جدید
-    triangle.style.animation = `move-triangle ${randomDuration}s linear infinite alternate`;
-  });
-}
-
-// این تابع برای حرکت تصادفی در داخل کانتینر است که به دیواره‌ها برخورد می‌کند
-function moveTriangleRandom(triangle, container) {
-  const containerWidth = container.offsetWidth - triangle.offsetWidth;
-  const containerHeight = container.offsetHeight - triangle.offsetHeight;
-
-  let posX = Math.random() * containerWidth;
-  let posY = Math.random() * containerHeight;
-  let dx = (Math.random() - 0.5) * 4; // سرعت افقی
-  let dy = (Math.random() - 0.5) * 4; // سرعت عمودی
-
-  function move() {
-    posX += dx;
-    posY += dy;
-
-    // برخورد با دیواره‌ها
-    if (posX <= 0 || posX >= containerWidth) dx *= -1;
-    if (posY <= 0 || posY >= containerHeight) dy *= -1;
-
-    // تغییر موقعیت
-    triangle.style.transform = `translate(${posX}px, ${posY}px)`;
-    requestAnimationFrame(move);
-  }
-
-  move();
-}
 
 // فراخوانی برای حرکت مثلث‌ها در همه کانتینرها
 document.querySelectorAll(".container-triangle").forEach((container) => {
@@ -219,3 +171,41 @@ sellTab.addEventListener("click", () => {
   sellContent.classList.add("active");
   buyContent.classList.remove("active");
 });
+
+const menuButton = document.getElementById("menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const closeMenu = document.getElementById("close-menu");
+
+  const dropdownButton = document.getElementById("dropdown-button");
+  const dropdownMenu = document.getElementById("dropdown-menu");
+  const dropdownIcon = document.getElementById("dropdown-icon");
+
+  menuButton.addEventListener("click", () => {
+    mobileMenu.classList.remove("hidden");
+    const direction = document.documentElement.dir === "rtl" ? "translateX(0)" : "translateX(0)";
+    mobileMenu.style.transform = direction;
+  });
+
+  closeMenu.addEventListener("click", () => {
+    const direction = document.documentElement.dir === "rtl" ? "translateX(-100%)" : "translateX(100%)";
+    mobileMenu.style.transform = direction;
+    setTimeout(() => {
+      mobileMenu.classList.add("hidden");
+    }, 300); // Wait for the transition to complete before hiding
+  });
+
+  dropdownButton.addEventListener("click", () => {
+    dropdownMenu.classList.toggle("hidden");
+    dropdownIcon.classList.toggle("bx-chevron-down");
+    dropdownIcon.classList.toggle("bx-chevron-up");
+  });
+  function handleSelectChange(event) {
+    const selectedTab = event.target.value; // دریافت value انتخاب‌شده
+    const tabsContainer = document.querySelector(".tabs");
+    const targetButton = tabsContainer.querySelector(`[data-target="${selectedTab}"]`);
+  
+    // شبیه‌سازی کلیک روی دکمه مربوطه
+    if (targetButton) {
+      targetButton.click();
+    }
+  }
