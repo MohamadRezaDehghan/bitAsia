@@ -109,33 +109,39 @@ This set of fonts are used in this project under the license: (.....)
 }
 
 :root {
-  --color-teal: #0ead98;
+  
+  --color-teal: #0EAD98;
   --bg-teal: #0ead9817;
   --color-tealLight: #0ead9817;
 
   /*dark*/
-  --bg-dark-body: #111;
+  --bg-dark-body: #475467;
   --bg-dark-card: #344054;
-  --bg-dark-footer: #111;
+  --bg-dark-footer: #161a1e;
 
   --bg-neutralCustom: #222;
   --bg-neutralCustom-700: #4b5563;
   --white-color: #ffffff;
   --text-zincCustom-800: #333;
   --text-zincCustom-900: #475467;
-  --text-slate-50: #f7f8fa;
+  --text-slate-50: #F7F8FA;
 
   --text-grayCustom-100: #f3f4f6;
-  --text-grayCustom-200: #e5e7eb;
-  --text-grayCustom-300: #d1d5db;
+  --text-grayCustom-200: #EAECF0;
+  --text-grayCustom-300: #D0D5DD;
   --text-grayCustom-400: #9ca3af;
   --text-grayCustom-500: #6b7280;
   --text-grayCustom-600: #4b5563;
   --text-grayCustom-700: #374151;
-  --text-grayCustom-800: #1f2937;
-  --text-grayCustom-900: #111827;
+  --text-grayCustom-800: #1E2329;
+  --text-grayCustom-900: #2B3139;
   --text-green-500: #22c55e;
+  --text-green-400: #32D583;
   --text-yellow-500: #eab308;
+  --text-red-500:#ef4444;
+  --text-red-400: #F97066;
+  --text-blue-dark-200:#B2CCFF;
+  
 }
 
 body {
@@ -150,9 +156,22 @@ body {
   
 }
 
+
+
+html.dark .background {
+  background-image: url("../../public/images/Group1Dark.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 420px) {
   .background {
     background-size: 150%; /* تصویر در حالت صفحه 320px بزرگ‌تر می‌شود */
+  }
+
+  .backgroundDark {
+    background-size: 150%;
   }
 }
 
@@ -297,5 +316,9 @@ transition: 0.4s;
 
 /* استفاده از Tailwind برای پوزیشن دهی */
 .triangle-wrapper {
-  position: absolute; /* به این ترتیب می‌توانید مثلث‌ها را در هر جایی قرار دهید */
+  position: absolute; /* به این ترتیب می‌توانید مثلث‌ها را در هر جا
+  یی قرار دهید */
+}
+html.dark img.triangle{
+  src: '../../public/images/vectordark.svg';
 }

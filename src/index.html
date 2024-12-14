@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="fa">
+<html dir="rtl" lang="fa" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <title>BitAsia</title>
 </head>
-<body class=" max-w-[1440px] mx-auto">
-  <div class=" bg-gray-100">
+<body class="max-w-[1440px] mx-auto">
+  <div class=" bg-grayCustom-100 dark:bg-darkBody">
 
   
     <div class="mx-auto px-2 md:px-6 pb-60">
@@ -19,18 +19,18 @@
           <div class="flex items-center ">
             <div class="flex items-center">
               <img src="../public/images/Content.png" class="w-10 h-10" alt="">
-              <h2 class="font-bold leading-8 ps-2">محمدرضا دهقان</h2>
+              <h2 class="font-bold leading-8 ps-2 dark:text-whiteColor">محمدرضا دهقان</h2>
             </div>
   
             <div class="ps-0 md:!ps-10">
-              <ul class="hidden md:flex gap-x-5 text-gray-700 font-semibold text-md">
+              <ul class="hidden md:flex gap-x-5 text-grayCustom-700 dark:text-grayCustom-200 font-semibold text-md">
                 <li class="relative group">
                   <a href="#" class="flex items-center gap-x-1 hover:text-blue-600">صفحه اصلی
                     <i class="bx bx-chevron-down text-lg font-bold group-hover:hidden"></i>
                     <i class="bx bx-chevron-up !hidden text-lg font-bold group-hover:!inline"></i>
                   </a>
                   <div
-                    class="absolute hidden group-hover:flex  bg-white text-gray-700 shadow-lg py-4 px-6 rounded-lg  gap-x-4">
+                    class="absolute hidden group-hover:flex  bg-grayCustom-100 dark:bg-darkBody text-grayCustom-700 dark:text-grayCustom-200 shadow-lg py-4 px-6 rounded-lg  gap-x-4">
                     <div class="flex flex-col gap-y-2 px-5 text-nowrap ">
                     <a href="#" class="flex items-center gap-x-1 hover:text-blue-600">
                       <i  class="bx bx-message-square-add text-lg w-6 h-6"></i>
@@ -73,33 +73,33 @@
             
          </div>
          <div class="hidden md:flex gap-x-4 items-center">
-          <button class=" bg-blue-700 py-2 px-4 font-semibold text-md text-gray-100 rounded-lg">
+          <button class=" bg-blue-700 dark:bg-button py-2 px-4 font-semibold text-md text-grayCustom-100 dark:text-grayCustom-200 rounded-lg">
               ثبت نام 
           </button>
   
-          <p class="text-gray-600 font-semibold text-md leading-6">
+          <p class="text-grayCustom-600 dark:text-grayCustom-200 font-semibold text-md leading-6">
               <a href="#">ورود به سیستم</a>
           </p>
          </div>
          <div class="pe-2 md:hidden">
-          <i class="bx bx-menu text-2xl  text-gray-700" id="menu-button"></i>
+          <i class="bx bx-menu text-2xl  text-gray-700 dark:text-grayCustom-200" id="menu-button"></i>
         </div>
   
         <div
         id="mobile-menu"
-        class="fixed top-0 h-full w-3/4 bg-gray-100 shadow-lg transform -translate-x-full rtl:translate-x-full transition-transform duration-300 hidden z-50"
+        class="fixed top-0 h-full w-3/4 bg-grayCustom-100 shadow-lg transform -translate-x-full rtl:translate-x-full transition-transform duration-300 hidden z-50"
       >
         <div class="p-4">
           <button
             id="close-menu"
-            class="text-gray-600 text-xl mb-4 rtl:text-left"
+            class="text-grayCustom-600 dark:text-grayCustom-200 text-xl mb-4 rtl:text-left"
           >
             <i class="bx bx-x text-2xl"></i>
           </button>
-          <ul class="flex flex-col gap-y-4 text-gray-700 font-semibold">
+          <ul class="flex flex-col gap-y-4 text-grayCustom-700 dark:text-grayCustom-200 font-semibold">
             <li class="relative">
               <button 
-                class="flex items-center justify-between w-full hover:text-blue-600" 
+                class="flex items-center justify-between w-full text-grayCustom-700 hover:text-blue-600" 
                 id="dropdown-button">
                 صفحه اصلی
                 <i class="bx bx-chevron-down text-lg font-bold" id="dropdown-icon"></i>
@@ -122,29 +122,29 @@
   
         <div class="flex gap-x-4 items-center justify-center pt-10">
           
-          <button class=" bg-blue-700 py-2 px-4 font-semibold text-sm text-gray-100 rounded-lg">
+          <button class=" bg-blue-700 dark:bg-button py-2 px-4 font-semibold text-sm text-gray-100 rounded-lg dark:text-grayCustom-50">
               ثبت نام 
           </button>
   
-          <p class="text-gray-600 font-semibold text-sm leading-6">
+          <p class="text-gray-600 dark:text-grayCustom-200 font-semibold text-sm leading-6">
               <a href="#">ورود به سیستم</a>
           </p>
          </div>
       </div>
          </div>
        <!-- start trade section -->
-       <div class="background  flex flex-col justify-between h-auto   md:h-[600px] ">
+       <div class="flex flex-col justify-between h-auto   md:h-[600px] background">
         <div class="flex flex-col items-center justify-center px-3 md:px-6">
             <div class="text-center "> 
-                <p class="  py-2 md:px-6 w-[260px] md:w-auto text-[10px] md:text-sm text-blue-700 font-medium leading-5 bg-blue-100 rounded-2xl ">اولین و بزرگترین صرافی ارز دیجیتال ایرانی در متاورس</p>
+                <p class="  py-2 md:px-6 w-[260px] md:w-auto text-[10px] md:text-sm text-blue-700 dark:text-grayCustom-200 font-medium leading-5 bg-blue-100 dark:bg-button rounded-2xl ">اولین و بزرگترین صرافی ارز دیجیتال ایرانی در متاورس</p>
             </div>
-            <h1 class=" text-2xl text-center md:text-start md:text-5xl font-semibold text-gray-700 mt-5">صرافی آنلاین ارز دیجیتال بیت آسیا</h1>
-            <P class="font-normal md:text-xl text-gray-900 leading-5 md:leading-9 pt-8 text-md text-center ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</P>
+            <h1 class=" text-2xl text-center md:text-start md:text-5xl font-semibold text-gray-700 mt-5 dark:text-grayCustom-200">صرافی آنلاین ارز دیجیتال بیت آسیا</h1>
+            <P class="font-normal md:text-xl text-gray-900 leading-5 md:leading-9 pt-8 text-md text-center dark:text-grayCustom-200">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</P>
 
             <div class="flex  pt-10 gap-x-2 md:gap-x-6">
-                <button class="bg-blue-700 rounded-md text-sm md:text-md text-gray-100 py-2 px-2 md:px-4">شروع معامله</button>
+                <button class="bg-blue-700 dark:bg-button rounded-md text-sm md:text-md text-grayCustom-100 py-2 px-2 md:px-4 dark:text-grayCustom-200">شروع معامله</button>
                 <button >
-                   <div class="flex items-center ">
+                   <div class="flex items-center text-grayCustom-900 dark:text-grayCustom-200 ">
                     <p class="text-sm">مشاهده ویدیو</p>
                     <i class="bx bx-play-circle w-3 text-xl md:text-2xl ps-1 md:ps-2 "></i>
                 </div> 
@@ -161,16 +161,16 @@
                   <div class="flex justify-between items-center">
                     <div class="gap-x-2 flex items-center">
                       <img src="../public/images/BTC.png" class="w-8 h-8" alt="">
-                      <p class="text-black font-semibold  text-md">BTC/USDT</p>
+                      <p class="text-black font-semibold  text-md dark:text-grayCustom-300">BTC/USDT</p>
                     </div>
-                    <div class="text-sm flex items-center gap-x-2 font-medium">
+                    <div class="text-sm flex items-center gap-x-2 font-medium dark:text-grayCustom-300">
                      3,864,451,042 <span>تومان</span>
                     </div>
                   </div>
                   <div class="flex justify-between items-center">
                       <div class="flex items-center gap-x-3">
-                        <p class="text-sm">61,674,9</p>
-                        <span class="text-xs font-semibold text-green-600">12.3 %</span>
+                        <p class="text-sm dark:text-grayCustom-300">61,674,9</p>
+                        <span class="text-xs font-semibold text-green-600 dark:text-green-400">12.3 %</span>
                       </div>
 
                       <div>
@@ -187,16 +187,16 @@
                   <div class="flex justify-between items-center">
                     <div class="gap-x-2 flex items-center">
                       <img src="../public/images/ETH.png" class="w-8 h-8" alt="">
-                      <p class="text-black font-semibold  text-md">ETH/USDT</p>
+                      <p class="text-black font-semibold  text-md dark:text-grayCustom-300">ETH/USDT</p>
                     </div>
-                    <div class="text-sm flex items-center gap-x-2 font-medium">
+                    <div class="text-sm flex items-center gap-x-2 font-medium dark:text-grayCustom-300">
                      3,864,451,042 <span>تومان</span>
                     </div>
                   </div>
                   <div class="flex justify-between items-center">
                       <div class="flex items-center gap-x-3">
-                        <p class="text-sm">61,674,9</p>
-                        <span class="text-xs font-semibold text-red-600">12.3 %</span>
+                        <p class="text-sm dark:text-grayCustom-300">61,674,9</p>
+                        <span class="text-xs font-semibold text-red-600 dark:text-red-400">12.3 %</span>
                       </div>
 
                       <div>
@@ -214,16 +214,16 @@
                   <div class="flex justify-between items-center">
                     <div class="gap-x-2 flex items-center">
                       <img src="../public/images/ADA.png" class="w-8 h-8" alt="">
-                      <p class="text-black font-semibold  text-md">ADA/USDT</p>
+                      <p class="text-black font-semibold  text-md dark:text-grayCustom-300">ADA/USDT</p>
                     </div>
-                    <div class="text-sm flex items-center gap-x-2 font-medium">
+                    <div class="text-sm flex items-center gap-x-2 font-medium dark:text-grayCustom-300">
                      3,864,451,042 <span>تومان</span>
                     </div>
                   </div>
                   <div class="flex justify-between items-center">
                       <div class="flex items-center gap-x-3">
-                        <p class="text-sm">61,674,9</p>
-                        <span class="text-xs font-semibold text-green-600">12.3 %</span>
+                        <p class="text-sm dark:text-grayCustom-300">61,674,9</p>
+                        <span class="text-xs font-semibold text-green-600 dark:text-green-400">12.3 %</span>
                       </div>
 
                       <div>
@@ -240,16 +240,16 @@
                   <div class="flex justify-between items-center">
                     <div class="gap-x-2 flex items-center">
                       <img src="../public/images/DOGE.png" class="w-8 h-8" alt="">
-                      <p class="text-black font-semibold  text-md">DOGE/USDT</p>
+                      <p class="text-black font-semibold  text-md dark:text-grayCustom-300">DOGE/USDT</p>
                     </div>
-                    <div class="text-sm flex items-center gap-x-2 font-medium">
+                    <div class="text-sm flex items-center gap-x-2 font-medium dark:text-grayCustom-300">
                      3,864,451,042 <span>تومان</span>
                     </div>
                   </div>
                   <div class="flex justify-between items-center">
-                      <div class="flex items-center gap-x-3">
+                      <div class="flex items-center gap-x-3 dark:text-grayCustom-300">
                         <p class="text-sm">61,674,9</p>
-                        <span class="text-xs font-semibold text-red-600">12.3 %</span>
+                        <span class="text-xs font-semibold text-red-600 dark:text-red-400">12.3 %</span>
                       </div>
 
                       <div>
@@ -277,11 +277,13 @@
       <div class="absolute top-0" >
         
         <div class="triangle-wrapper top-10 left-20">
-          <img src="../public/images/VectorAboutUs1.svg" alt="Triangle" class="triangle">
+          <img src="../public/images/VectorAboutUs1.svg" alt="Triangle" class="triangle dark:hidden">
+          <img src="../public/images/Vectordark.svg" alt="Triangle" class="hidden dark:block"> 
         </div>
         
         <div class="triangle-wrapper top-32 right-10">
-          <img src="../public/images/VectorAboutUs2.svg" alt="Triangle" class="triangle">
+          <img src="../public/images/VectorAboutUs2.svg" alt="Triangle" class="triangle dark:hidden">
+          <img src="../public/images/Vectordark.svg" alt="Triangle" class="hidden dark:block"> 
         </div>
         <div class="triangle-wrapper top-10 right-52">
           <img src="../public/images/VectorAboutUs2.svg" alt="Triangle" class="triangle">
