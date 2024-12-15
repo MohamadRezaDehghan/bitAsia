@@ -162,7 +162,7 @@ html.dark .background {
   background-image: url("../../public/images/Group1Dark.png");
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-size: cover;
+  
 }
 
 @media (max-width: 420px) {
@@ -170,9 +170,6 @@ html.dark .background {
     background-size: 150%; /* تصویر در حالت صفحه 320px بزرگ‌تر می‌شود */
   }
 
-  .backgroundDark {
-    background-size: 150%;
-  }
 }
 
 .swiper {
@@ -266,9 +263,25 @@ html.dark .background {
   white-space: nowrap; /* جلوگیری از شکستن خطوط */
 }
 
-.accordion{
+/* .accordion{
 transition: 0.4s;
+} */
+.panel {
+  max-height: 0; /* بسته */
+  overflow: hidden;
+  padding: 0; /* حذف padding در حالت بسته */
+  transition: max-height 0.4s ease, padding 0.4s ease; /* اضافه کردن انتقال برای padding */
 }
+
+.panel.open {
+  max-height: 300px; /* مقدار بزرگ‌تر از ارتفاع محتوای واقعی */
+  padding: 20px; /* پدینگ دلخواه هنگام باز شدن */
+}
+
+
+
+
+
 
 .tabs-for-table {
   display: flex;
@@ -280,7 +293,7 @@ transition: 0.4s;
   outline: 1px solid #e5e7eb;
   border-radius: 0.5rem;
   cursor: pointer;
- box-shadow: 0px 4px 20px 0px rgba(54, 63, 114, 0.25) !important;
+ 
 
 }
 
@@ -288,20 +301,30 @@ transition: 0.4s;
   color: #2563eb;
   color: white;
   border: #000 1px !important;
-  box-shadow: 0px 4px 20px 0px rgba(54, 63, 114, 0.25) !important;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06);
+
+box-shadow: 0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+ 
 
 
 }
 .tab-button-for-table > .change > .active {
   color: #2563eb !important;
-  box-shadow: 0px 4px 20px 0px rgba(54, 63, 114, 0.25) !important;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06);
 
+box-shadow: 0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+
+
+}
+
+html.dark .tab-button-for-table{
+  border:#374151 !important;
 }
 
 html.dark .tab-button-for-table > .change > .active {
   color: #2563eb !important;
   box-shadow: 0px 4px 20px 0px rgba(54, 63, 114, 0.25) !important;
-  background: rgba(71, 84, 103, 1);
+  background-color: rgba(52, 64, 84, 1) !important;
 
 }
 
@@ -355,4 +378,19 @@ html.dark .tab-button-for-table > .change > .active {
 }
 html.dark img.triangle{
   src: '../../public/images/vectordark.svg';
+}
+
+[dir="ltr"] .changDir{
+  right: 2px;
+  left: auto;
+}
+
+/* جهت RTL */
+[dir="rtl"] i.bx-chevron-left {
+  content: "\e902"; /* کد آیکون bx-chevron-left */
+}
+
+/* جهت LTR */
+[dir="ltr"] i.bx-chevron-left {
+  content: "\e903"; /* کد آیکون bx-chevron-right */
 }

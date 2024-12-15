@@ -94,29 +94,34 @@ window.onclick = function (event) {
   }
   }
 
-  var acc = document.getElementsByClassName("accordion");
-var i;
+ // انتخاب همه دکمه‌های آکاردئون
+document.querySelectorAll('.accordion').forEach(button => {
+  button.addEventListener('click', function () {
+    // تغییر وضعیت آیکون
+    const icon = this.querySelector('.icon-chev');
+    icon.classList.toggle('bx-chevron-down');
+    icon.classList.toggle('bx-chevron-up');
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    // پیدا کردن پنل مرتبط
+    const panel = this.nextElementSibling;
 
-    var icon = this.querySelector('.icon-chev');
-    if(icon.classList.contains('bx-chevron-down')){
-      icon.classList.remove('bx-chevron-down');
-      icon.classList.add('bx-chevron-up')
-    }else{
-      icon.classList.remove('bx-chevron-up');
-      icon.classList.add('bx-chevron-down')
-    };
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
+    // باز یا بسته کردن پنل
+    if (panel.classList.contains('open')) {
+      panel.classList.remove('open');
     } else {
-      panel.style.display = "block";
+      // بستن پنل‌های دیگر (اختیاری)
+      document.querySelectorAll('.panel.open').forEach(openPanel => {
+        openPanel.classList.remove('open');
+      });
+
+      // باز کردن پنل
+      panel.classList.add('open');
     }
   });
-}
+});
+
+  
+  
 
 
 const tabButtons = document.querySelectorAll('.tab-button');
@@ -129,8 +134,8 @@ tabButtons.forEach(button => {
     
     // حذف کلاس فعال از تمام دکمه‌ها
     tabButtons.forEach(btn => {
-      btn.classList.remove('text-blue-600', 'border', 'border-gray-300');
-      btn.querySelector('.tab-text').classList.remove('!text-blue-600'); // حذف رنگ از متن
+      btn.classList.remove('text-blue-600', 'border', '!border-grayCustom-200' , 'dark:border-none' , 'dark:bg-grayCustom-600');
+      btn.querySelector('.tab-text').classList.remove('text-blue-600','dark:text-blue-100'); // حذف رنگ از متن
     });
 
     // نمایش محتوای مرتبط
@@ -142,8 +147,8 @@ tabButtons.forEach(button => {
 
     // افزودن کلاس فعال به دکمه کلیک‌شده
     
-    button.classList.add('text-blue-600', 'border', 'border-gray-300');
-    button.querySelector('.tab-text').classList.add('!text-blue-600'); 
+    button.classList.add('text-blue-600', 'border', '!border-grayCustom-200' , 'dark:border-none' , 'dark:bg-grayCustom-600');
+    button.querySelector('.tab-text').classList.add('text-blue-600','dark:text-blue-100'); 
   });
 });
 
@@ -155,19 +160,19 @@ const chngeCol1 =document.getElementById("changeColor1")
 const chngeCol2 =document.getElementById("changeColor2")
 
 buyTab.addEventListener("click", () => {
-  buyTab.classList.add("active");
-  chngeCol1.classList.add('text-blue-600')
-  chngeCol2.classList.remove('text-blue-600')
-  sellTab.classList.remove("active");
+  buyTab.classList.add('active','dark:bg-dark-card');
+  chngeCol1.classList.add('text-blue-600','dark:text-blue-400')
+  chngeCol2.classList.remove('text-blue-600','dark:text-blue-400')
+  sellTab.classList.remove('active','dark:bg-dark-card');
   buyContent.classList.add("active");
   sellContent.classList.remove("active");
 });
 
 sellTab.addEventListener("click", () => {
-  sellTab.classList.add("active");
-  chngeCol1.classList.remove('text-blue-600')
-  chngeCol2.classList.add('text-blue-600')
-  buyTab.classList.remove("active");
+  sellTab.classList.add('active','dark:bg-dark-card');
+  chngeCol1.classList.remove('text-blue-600','dark:text-blue-400')
+  chngeCol2.classList.add('text-blue-600','dark:text-blue-400')
+  buyTab.classList.remove('active','dark:bg-dark-card');
   sellContent.classList.add("active");
   buyContent.classList.remove("active");
 });

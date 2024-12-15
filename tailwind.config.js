@@ -98,7 +98,8 @@ module.exports = {
         'dark-card': 'var(--bg-dark-card)',
         'bg-dark-footer': 'var(--bg-dark-footer)',
         'light-pink': '#FFFDFD',
-        'button' :'#528BFF'
+        'button' :'#528BFF',
+        'blueDark' : 'var(--text-blue-dark-200)'
     },
     },
   },
