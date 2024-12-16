@@ -162,7 +162,7 @@ const chngeCol2 =document.getElementById("changeColor2")
 buyTab.addEventListener("click", () => {
   buyTab.classList.add('active','dark:bg-dark-card');
   chngeCol1.classList.add('text-blue-600','dark:text-blue-400')
-  chngeCol2.classList.remove('text-blue-600','dark:text-blue-400')
+  chngeCol2.classList.remove('text-red-600','dark:text-red-400')
   sellTab.classList.remove('active','dark:bg-dark-card');
   buyContent.classList.add("active");
   sellContent.classList.remove("active");
@@ -171,7 +171,7 @@ buyTab.addEventListener("click", () => {
 sellTab.addEventListener("click", () => {
   sellTab.classList.add('active','dark:bg-dark-card');
   chngeCol1.classList.remove('text-blue-600','dark:text-blue-400')
-  chngeCol2.classList.add('text-blue-600','dark:text-blue-400')
+  chngeCol2.classList.add('text-red-600','dark:text-red-400')
   buyTab.classList.remove('active','dark:bg-dark-card');
   sellContent.classList.add("active");
   buyContent.classList.remove("active");
@@ -198,6 +198,29 @@ const menuButton = document.getElementById("menu-button");
       mobileMenu.classList.add("hidden");
     }, 300); // Wait for the transition to complete before hiding
   });
+
+  const menuButton1 = document.getElementById("menu-button1");
+  const mobileMenu1 = document.getElementById("mobile-menu1");
+  const closeMenu1 = document.getElementById("close-menu1");
+
+  const dropdownButton1 = document.getElementById("dropdown-button1");
+  const dropdownMenu1 = document.getElementById("dropdown-menu1");
+  const dropdownIcon1 = document.getElementById("dropdown-icon1");
+
+  menuButton1.addEventListener("click", () => {
+    mobileMenu1.classList.remove("hidden");
+    const direction = document.documentElement.dir === "rtl" ? "translateX(0)" : "translateX(0)";
+    mobileMenu1.style.transform = direction;
+  });
+
+  closeMenu1.addEventListener("click", () => {
+    const direction = document.documentElement.dir === "rtl" ? "translateX(-100%)" : "translateX(100%)";
+    mobileMenu1.style.transform = direction;
+    setTimeout(() => {
+      mobileMenu1.classList.add("hidden");
+    }, 300); // Wait for the transition to complete before hiding
+  });
+
 
   dropdownButton.addEventListener("click", () => {
     dropdownMenu.classList.toggle("hidden");

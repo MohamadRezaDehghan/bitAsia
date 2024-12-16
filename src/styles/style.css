@@ -274,8 +274,8 @@ transition: 0.4s;
 }
 
 .panel.open {
-  max-height: 300px; /* مقدار بزرگ‌تر از ارتفاع محتوای واقعی */
-  padding: 20px; /* پدینگ دلخواه هنگام باز شدن */
+  max-height: 300px;
+  padding: 0px; 
 }
 
 
@@ -353,6 +353,17 @@ html.dark .tab-button-for-table > .change > .active {
 
 /* برای چپ‌چین */
 [dir="ltr"] #mobile-menu {
+  right: 0;
+  left: auto;
+}
+
+[dir="rtl"] #mobile-menu1 {
+  left: 0;
+  right: auto;
+}
+
+/* برای چپ‌چین */
+[dir="ltr"] #mobile-menu1 {
   right: 0;
   left: auto;
 }

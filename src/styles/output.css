@@ -1126,6 +1126,11 @@ video {
   background-color: var(--text-grayCustom-100);
 }
 
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity, 1));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -1486,6 +1491,10 @@ video {
 
 .text-red-500 {
   color: var(--text-red-500);
+}
+
+.text-red-600 {
+  color: var(--text-red-600);
 }
 
 .text-red-700 {
@@ -1873,9 +1882,7 @@ transition: 0.4s;
 
 .panel.open {
   max-height: 300px;
-  /* مقدار بزرگ‌تر از ارتفاع محتوای واقعی */
-  padding: 20px;
-  /* پدینگ دلخواه هنگام باز شدن */
+  padding: 0px;
 }
 
 .tabs-for-table {
@@ -1937,6 +1944,18 @@ html.dark .tab-button-for-table > .change > .active {
 /* برای چپ‌چین */
 
 [dir="ltr"] #mobile-menu {
+  right: 0;
+  left: auto;
+}
+
+[dir="rtl"] #mobile-menu1 {
+  left: 0;
+  right: auto;
+}
+
+/* برای چپ‌چین */
+
+[dir="ltr"] #mobile-menu1 {
   right: 0;
   left: auto;
 }
