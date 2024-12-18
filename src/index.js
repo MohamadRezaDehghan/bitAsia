@@ -202,30 +202,40 @@ const menuButton = document.getElementById("menu-button");
   const menuButton1 = document.getElementById("menu-button1");
   const mobileMenu1 = document.getElementById("mobile-menu1");
   const closeMenu1 = document.getElementById("close-menu1");
+  const html = document.documentElement
 
   const dropdownButton1 = document.getElementById("dropdown-button1");
   const dropdownMenu1 = document.getElementById("dropdown-menu1");
   const dropdownIcon1 = document.getElementById("dropdown-icon1");
 
   menuButton1.addEventListener("click", () => {
+    const direction = html.dir === "rtl" ? "translateX(0)" : "translateX(0)";
+    mobileMenu1.style.transform = direction;
     mobileMenu1.classList.remove("hidden");
-    const direction = document.documentElement.dir === "rtl" ? "translateX(0)" : "translateX(0)";
-    mobileMenu1.style.transform = direction;
+    html.classList.add("overflow-hidden");
   });
-
+  
   closeMenu1.addEventListener("click", () => {
-    const direction = document.documentElement.dir === "rtl" ? "translateX(-100%)" : "translateX(100%)";
+    const direction = html.dir === "rtl" ? "translateX(-100%)" : "translateX(100%)";
     mobileMenu1.style.transform = direction;
+  
     setTimeout(() => {
       mobileMenu1.classList.add("hidden");
-    }, 300); // Wait for the transition to complete before hiding
+    }, 300); // هماهنگ با مدت زمان transition
+    html.classList.remove("overflow-hidden");
   });
+  
 
 
   dropdownButton.addEventListener("click", () => {
     dropdownMenu.classList.toggle("hidden");
     dropdownIcon.classList.toggle("bx-chevron-down");
     dropdownIcon.classList.toggle("bx-chevron-up");
+  });
+  dropdownButton1.addEventListener("click", () => {
+    dropdownMenu1.classList.toggle("hidden");
+    dropdownIcon1.classList.toggle("bx-chevron-down");
+    dropdownIcon1.classList.toggle("bx-chevron-up");
   });
   function handleSelectChange(event) {
     const selectedTab = event.target.value; // دریافت value انتخاب‌شده

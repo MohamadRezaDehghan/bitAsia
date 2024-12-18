@@ -74,9 +74,7 @@
          </div>
        
          <div class=" flex gap-x-4 items-center">
-          <div class="pe-2 ">
-            <i class="bx bxs-user text-2xl  text-grayCustom-700 dark:text-grayCustom-200" id="menu-button1"></i>
-          </div>
+
           <button class=" hidden md:block bg-blue-700 dark:bg-button py-2 px-4 font-semibold text-md text-grayCustom-100 dark:text-grayCustom-200 rounded-lg">
               ثبت نام 
           </button>
@@ -85,22 +83,43 @@
               <a href="#">ورود به سیستم</a>
           </p>
          </div>
-         <div class="pe-2 md:hidden">
-          <i class="bx bx-menu text-2xl  text-gray-700 dark:text-grayCustom-200" id="menu-button"></i>
+         <div class="pe-2 gap-x-3 flex md:hidden">
+          
+          <div class="pe-2 ">
+            <i class="bx bxs-user text-2xl  text-grayCustom-700 dark:text-grayCustom-200 md:hidden" id="menu-button1"></i>
+          </div>
+          <i class="bx bx-menu text-3xl  text-gray-700 dark:text-grayCustom-200" id="menu-button"></i>  
         </div>
         <!-- usermenu -->
         <div
         id="mobile-menu1"
-        class="fixed top-0 h-full w-3/4 bg-grayCustom-100 dark:bg-darkBody shadow-lg transform -translate-x-full rtl:translate-x-full transition-transform duration-300 hidden z-50"
+        class="fixed top-0 h-full w-3/4 bg-grayCustom-100 dark:bg-darkBody shadow-lg transform -translate-x-full rtl:translate-x-full transition-transform duration-300 hidden z-50 "
       >
-        <div class="p-4">
+        <div class="px-4 ">
+          <div class="flex flex-col py-3">
+          <div class="flex flex-col py-3 border-b border-grayCustom-700 dark:border-grayCustom-300 "> 
           <button
             id="close-menu1"
             class="text-grayCustom-600 dark:text-grayCustom-200 text-xl mb-4 rtl:text-left"
           >
             <i class="bx bx-x text-2xl"></i>
           </button>
-          <ul class="flex flex-col gap-y-4 text-grayCustom-700 dark:text-grayCustom-200 font-semibold">
+          <div class="flex items-center gap-x-2 ">
+            <div>
+              <img src="../public/images/Content.png" class="w-10 h-10 overflow-hidden rounded-full" alt="">
+            </div>
+            <div class="flex flex-col gap-y-2 text-gryCustom-700 dark:text-grayCustom-300">
+              <p class="text-xl font-semibold">test@test.com</p>
+              <span class="text-md font-normal w-full text-center">5238</span>
+            </div>
+          </div>
+        </div>
+        <div class="px-5 mt-7">
+          <button class="bg-blue-500 text-grayCustom-100 py-2 w-full rounded-lg">خروج</button>
+        </div>
+      </div>
+      <div class="overflow-y-auto h-[53vh]">
+          <ul class="flex flex-col gap-y-4 text-grayCustom-700 dark:text-grayCustom-200 font-semibold  ">
             <li class="relative">
               <button 
                 class="flex items-center justify-between w-full text-grayCustom-700 dark:text-grayCustom-200 hover:text-blue-600" 
@@ -121,19 +140,16 @@
             <li><a href="#" class="hover:text-blue-600">قیمت ارز</a></li>
             <li><a href="#" class="hover:text-blue-600">اخبار و مقالات</a></li>
             <li><a href="#" class="hover:text-blue-600">تماس باما</a></li>
+            <li><a href="#" class="hover:text-blue-600">تماس باما</a></li>
+            <li><a href="#" class="hover:text-blue-600">تماس باما</a></li>
+            <li><a href="#" class="hover:text-blue-600">تماس باما</a></li>
+            <li><a href="#" class="hover:text-blue-600">تماس باما</a></li>
+            <li><a href="#" class="hover:text-blue-600">تماس باما</a></li>
+            <li><a href="#" class="hover:text-blue-600">تماس باما</a></li>
           </ul>
+      </div>
         </div>
   
-        <div class="flex gap-x-4 items-center justify-center pt-10">
-          
-          <button class=" bg-blue-700 dark:bg-button py-2 px-4 font-semibold text-sm text-grayCustom-100 rounded-lg dark:text-grayCustom-50">
-              ثبت نام 
-          </button>
-  
-          <p class="text-grayCustom-600 dark:text-grayCustom-200 font-semibold text-sm leading-6">
-              <a href="#">ورود به سیستم</a>
-          </p>
-         </div>
       </div>
         
         <!-- mobile-menu -->
