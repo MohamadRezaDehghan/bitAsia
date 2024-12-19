@@ -162,7 +162,7 @@ const chngeCol2 =document.getElementById("changeColor2")
 buyTab.addEventListener("click", () => {
   buyTab.classList.add('active','dark:bg-dark-card');
   chngeCol1.classList.add('text-blue-600','dark:text-blue-400')
-  chngeCol2.classList.remove('text-red-600','dark:text-red-400')
+  chngeCol2.classList.remove('text-red-700','dark:text-red-400')
   sellTab.classList.remove('active','dark:bg-dark-card');
   buyContent.classList.add("active");
   sellContent.classList.remove("active");
@@ -171,7 +171,7 @@ buyTab.addEventListener("click", () => {
 sellTab.addEventListener("click", () => {
   sellTab.classList.add('active','dark:bg-dark-card');
   chngeCol1.classList.remove('text-blue-600','dark:text-blue-400')
-  chngeCol2.classList.add('text-red-600','dark:text-red-400')
+  chngeCol2.classList.add('text-red-700','dark:text-red-400')
   buyTab.classList.remove('active','dark:bg-dark-card');
   sellContent.classList.add("active");
   buyContent.classList.remove("active");
